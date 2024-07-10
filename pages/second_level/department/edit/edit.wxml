@@ -1,0 +1,8 @@
+<!--pages/second_level/department/edit/edit.wxml-->
+<view class="container">
+  <view class="input-group">
+    <text>系名：</text>
+    <input bindinput="bindInputName" value="{{name}}" />
+  </view>
+  <button bindtap="submitEdit" type="primary">提交</button>
+</view>

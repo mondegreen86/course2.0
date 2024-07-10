@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="input-group">
+    <text>课程名：</text>
+    <input bindinput="bindInputName" placeholder="请输入" />
+    <text>年级：</text>
+    <input bindinput="bindInputGrade" placeholder="请输入" />
+    <text>学分：</text>
+    <input bindinput="bindInputCredit" placeholder="请输入" />
+    <text>上课地点：</text>
+    <input bindinput="bindInputLocation" placeholder="请输入" />
+    <text>选择教师：</text>
+    <picker mode="selector" range="{{teacherNames}}" range-key="name" bindchange="bindPickerChange">
+      <view class="picker">
+        {{selectedTeacherName}}
+      </view>
+    </picker>
+  </view>
+  <button bindtap="submitAdd" type="primary">新增</button>
+</view>

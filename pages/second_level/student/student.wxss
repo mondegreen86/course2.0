@@ -1,0 +1,80 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 使容器占满整个视口高度 */
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff; /* 确保背景颜色和内容区分开 */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  border-style: groove;
+  width: 70%; /* 调整宽度以适应按钮 */
+  border-radius: 5px;
+  height: 45px;
+  padding: 0 10px; /* 添加内边距 */
+  font-size: 16px; /* 增加字体大小 */
+}
+
+.search-button {
+  width: 25%;
+  height: 45px;
+  background-color: #1cbbb4; /* 按钮背景色 */
+  color: white; /* 按钮文字颜色 */
+  border: none; /* 去掉边框 */
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px; /* 添加按钮与输入框之间的间距 */
+}
+
+.content {
+  margin-top: 0px; /* 调整此值以避免内容被顶部遮挡 */
+  flex: 1;
+  overflow-y: auto;
+  padding:0px; /* 添加内容区内边距 */
+}
+
+.message-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  background-color: #f9f9f9; /* 添加背景颜色 */
+  border-radius: 5px; /* 添加圆角 */
+  margin-bottom: 10px; /* 添加底部间距 */
+}
+
+.message-text {
+  font-size: 16px; /* 增加字体大小 */
+  color: #333; /* 改变文字颜色 */
+}
+
+.message-button {
+  background-color: #1cbbb4; /* 按钮背景色 */
+  color: white; /* 按钮文字颜色 */
+  border: none; /* 去掉边框 */
+  border-radius: 5px;
+  padding: 5px 10px; /* 添加内边距 */
+  font-size: 14px; /* 调整字体大小 */
+}
+.message-buttonD {
+  background-color: #fa3c3c; /* 按钮背景色 */
+  color: rgb(255, 255, 255); /* 按钮文字颜色 */
+  border: none; /* 去掉边框 */
+  border-radius: 5px;
+  padding: 5px 10px; /* 添加内边距 */
+  font-size: 14px; /* 调整字体大小 */
+}

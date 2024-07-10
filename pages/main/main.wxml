@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:360rpx">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="aspectFill"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="main">  
+  <view class="itemButton notice" bindtap='department'>
+			<text class="iconfont icon-icon"></text>
+      <text>系管理</text>
+  </view>
+  <view class="itemButton repairs" bindtap='major'>
+      <text class="iconfont icon-icon1"></text>
+      <text>专业管理</text>
+  </view>
+  <view class="itemButton suggest" bindtap='class'>
+      <text class="iconfont icon-banji"></text>
+      <text>班级管理</text>
+  </view>
+
+  <view class="itemButton suggest" bindtap='student'>
+      <text class="iconfont icon-xuesheng"></text>
+      <text>学生管理</text>
+  </view>
+  <view class="itemButton post" bindtap='course'>
+      <text class="iconfont icon-kecheng"></text>
+      <text>课程管理</text>
+  </view>
+  <view class="itemButton post" bindtap='courseStudent'>
+      <text class="iconfont icon-xuanke-xian"></text>
+      <text>选课管理</text>
+  </view>
+  <view class="itemButton post" bindtap='teacher'>
+      <text class="iconfont icon-jiaoshi"></text>
+      <text>教师管理</text>
+  </view>
+  <view class="itemButton more-and-more" >
+    <text>...</text>
+  </view>
+</view>

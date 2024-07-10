@@ -1,0 +1,16 @@
+<view class="container">
+
+  <view class="input-group">
+    <text>专业名：</text>
+    <input bindinput="bindInputName" placeholder="请输入" />
+    <text>选择系：</text>
+    <picker mode="selector" range="{{departmentNames}}" range-key="name" bindchange="bindPickerChange">
+      <view class="picker">
+        {{selectedDepartmentName}}
+      </view>
+    </picker>
+  </view>
+
+  
+  <button bindtap="submitAdd" type="primary">新增</button>
+</view>

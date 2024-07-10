@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/main",
+    "pages/logs/logs",
+
+
+    "pages/second_level/class/class",
+    "pages/second_level/class/add/add",
+    "pages/second_level/class/edit/edit",
+
+    "pages/second_level/course/course",
+    "pages/second_level/course/add/add",
+    "pages/second_level/course/edit/edit",
+
+    "pages/second_level/courseStudent/courseStudent",
+    "pages/second_level/courseStudent/add/add",
+    "pages/second_level/courseStudent/edit/edit",
+
+    "pages/second_level/department/department",
+    "pages/second_level/department/add/add",
+    "pages/second_level/department/edit/edit",
+
+    "pages/second_level/major/major",
+    "pages/second_level/major/add/add",
+    "pages/second_level/major/edit/edit",
+
+    "pages/second_level/student/student",
+    "pages/second_level/student/edit/edit",
+    "pages/second_level/student/add/add",
+
+    "pages/second_level/teacher/teacher",
+    "pages/second_level/teacher/edit/edit",
+    "pages/second_level/teacher/add/add"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "学生选课系统",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

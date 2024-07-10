@@ -1,0 +1,24 @@
+<!--pages/second_level/department/edit/edit.wxml-->
+<view class="container">
+	<view class="input-group">
+    <text>选择学生：</text>
+    <picker mode="selector" range="{{studentNames}}" range-key="name" bindchange="bindPickerChange">
+      <view class="picker">
+        {{studentName}}
+      </view>
+    </picker>
+    <text>选择课程：</text>
+    <picker mode="selector" range="{{courseNames}}" range-key="name" bindchange="bindPickerChangeC">
+      <view class="picker">
+        {{selectedCourseName}}
+      </view>
+    </picker>
+    <text>日常分：</text>
+    <input bindinput="bindInputDaily" value="{{dailyScore}}" />
+    <text>期末分：</text>
+    <input bindinput="bindInputExam" value="{{examScore}}" />
+    <text>总分：</text>
+    <input bindinput="bindInputScore" value="{{score}}" />
+  </view>
+  <button bindtap="submitEdit" type="primary">提交</button>
+</view>

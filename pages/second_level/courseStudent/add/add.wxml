@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="input-group">
+    <text>选择学生：</text>
+    <picker mode="selector" range="{{studentNames}}" range-key="name" bindchange="bindPickerChange">
+      <view class="picker">
+        {{selectedStudentName}}
+      </view>
+    </picker>
+    <text>选择课程：</text>
+    <picker mode="selector" range="{{courseNames}}" range-key="name" bindchange="bindPickerChangeC">
+      <view class="picker">
+        {{selectedCourseName}}
+      </view>
+    </picker>
+    <text>日常分：</text>
+    <input bindinput="bindInputDaily" placeholder="请输入" />
+    <text>期末分：</text>
+    <input bindinput="bindInputExam" placeholder="请输入" />
+    <text>总分：</text>
+    <input bindinput="bindInputScore" placeholder="请输入" />
+  </view>
+  <button bindtap="submitAdd" type="primary">新增</button>
+</view>

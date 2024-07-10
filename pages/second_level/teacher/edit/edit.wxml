@@ -1,0 +1,16 @@
+<!--pages/second_level/department/edit/edit.wxml-->
+<view class="container">
+  <view class="input-group">
+    <text>教师姓名：</text>
+    <input bindinput="bindInputName" value="{{name}}" />
+    <text>工号：</text>
+    <input bindinput="bindInputNumber" value="{{number}}" />
+    <text>选择系：</text>
+    <picker mode="selector" range="{{departmentNames}}" range-key="name" bindchange="bindPickerChange">
+      <view class="picker">
+        {{departmentName}}
+      </view>
+    </picker>
+  </view>
+  <button bindtap="submitEdit" type="primary">提交</button>
+</view>

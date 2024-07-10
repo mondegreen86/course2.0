@@ -1,0 +1,28 @@
+<!--pages/second_level/major/major.wxml-->
+<view class="container">
+  <view class="fixed-header">
+    <input bindinput="getInputValue" class="search-input" name="inputname" placeholder="请输入搜索" />
+    <button class="search-button" type="primary" bindtap="query">搜索</button>
+    <button class="search-button" type="primary" bindtap="add">新增</button>
+  </view>
+  <scroll-view class="content" scroll-y="true" bindscrolltolower="onReachBottom">
+    <block wx:for="{{messages}}" wx:key="id">
+      <view class="message-item">
+
+      <view style="display: flex;flex-direction: column;">
+        <text class="message-text">教师姓名：{{item.name}}</text>
+        <text class="message-text">工号：{{item.number}}</text>
+        <text class="message-text">所属系：{{item.departmentName}}</text>
+      </view>
+
+      <view style="display: flex;flex-direction: column;">
+        <button style="width: 80px;" class="message-button" bindtap="editMessage" data-id="{{item.id}}" data-name="{{item.departmentName}}">编辑</button>
+        <button style="width: 80px;" class="message-buttonD" bindtap="deleteMessage" data-id="{{item.id}}">删除</button>
+      </view>
+
+      </view>
+    </block>
+    <view wx:if="{{!hasMoreData}}" class="no-more">没有更多数据了</view>
+  </scroll-view>
+</view>
+

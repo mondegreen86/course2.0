@@ -1,0 +1,8 @@
+<!--pages/second_level/department/add/add.wxml-->
+<view class="container">
+  <view class="input-group">
+    <text>系名：</text>
+    <input bindinput="bindInputName" placeholder="请输入" />
+  </view>
+  <button bindtap="submitAdd" type="primary">新增</button>
+</view>
